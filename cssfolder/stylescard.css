@@ -1,0 +1,20 @@
+/*setting padding and border around animal’s name, image, and information */
+.animalcardmain {
+    display:flex;
+    flex-direction: column;
+    align-items: center;  
+    width: 316px;
+    border: 1px solid black;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 25px; /*rounded corners */    
+    box-shadow:10px 10px 5px  lightgrey;
+    font-family: Times, "Times New Roman", serif;
+    background-color: #fffff9;    
+}
+/* text is italicized for the animal’s interesting fact */
+.animalcardfunfact {
+    font-style: italic;
+    font-weight: 600;
+    /* align-content: center; */
+}

@@ -1,0 +1,43 @@
+q{
+    font-style: italic;
+    font-weight: bold;
+}
+.blogpost {
+    display: grid;
+    height: 100vh;
+    
+    grid-template-areas:
+       "head navhead"
+       "post navcontent"
+       "foot foot";
+    grid-template-columns: 1fr 200px;
+    grid-template-rows: 120px 1fr 70px;
+    gap: 3px;
+
+}  
+.postheader {
+    background-color: rgb(105, 186, 132);
+    grid-area: head;
+}
+.navheader{
+    background-color: rgb(105, 186, 132);
+    grid-area: navhead;
+}
+.postcontainer{
+    grid-area: post;
+    background-color: beige;
+}
+
+.sidenav{
+    display:flex;
+    flex-direction: column;
+    background-color: rgb(105, 186, 132);
+    grid-area: navcontent;
+    text-align: center;
+    font-size:large;
+}
+.postfooter{
+    background-color: rgb(105, 186, 132);
+    grid-area: foot;
+
+}

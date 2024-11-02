@@ -1,0 +1,64 @@
+/* add your CSS here */
+@import url("stylesmaster.css");
+@import url("stylescard.css");
+@import url("stylespost.css");
+.center{
+    text-align: center;
+}
+.social {
+    display: inline-block;
+    color: #ffffff;
+    border: none;
+    padding: 0.1em 0.6em;
+    outline: none;
+    text-align: center;
+    font-size: 0.9em;
+    margin: 0 0.2em;
+  }
+.subscription  { background: #676e73; }
+.twitter     { background: #55acee; }
+.instagram { background: #dd4b39; }
+.facebook    { background: #3B5998; }
+
+
+/* Image width set to 300px and rounded corners */
+img{
+    width: 300px;
+    border-radius: 10px;
+}
+@media all and (max-width:425px) {
+    .blogpost {
+        display: grid;
+        height: 100vh;
+        
+        grid-template-areas:
+           "head"
+           "post"
+           "navhead"
+           "navcontent"
+           "foot";
+        grid-template-columns: 1fr;
+        grid-template-rows: 120px 1fr 200px 300px 200px;
+        gap: 5px;
+            
+    }  
+}
+@media all and (max-width:375px) {
+    .blogpost {
+        display: grid;
+        height: 100vh;
+        
+        grid-template-areas:
+           "head"
+           "post"
+           "navhead"
+           "navcontent"
+           "foot";
+        grid-template-columns: 1fr;
+        grid-template-rows: 120px 1fr 200px 300px 200px;
+        gap: 15px;
+            
+    }  
+}
+
+
